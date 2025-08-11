@@ -84,3 +84,53 @@ const readline = require("readline").createInterface({
 // });
 
 // Ex 7
+
+// function sumArray(arr){
+//     let sum = 0;
+//     for(let i = 0; i<arr.length; i++){
+//         sum += Number(arr[i]);
+//     }
+//     return sum;
+// }
+
+// readline.question("How many element? ", (element) => {
+//   readline.question("Enter array: ", (input) => {
+//     let arr = input.split(" ");
+//     console.log(sumArray(arr));
+//     readline.close();
+//   });
+// });
+
+// Ex 8
+
+// let week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+// function returnDay(number){
+//     if(number<1 && number>7){
+//         return null;
+//     }else{
+//         return week[number -1];
+//     }
+// }
+
+// readline.question("Enter Number(1-7): ", (number) =>{
+//     console.log(returnDay(number))
+// })
+
+// Ex 9
+
+// function greet(name){
+//     let greet = "Greetings " + name + "!";
+//     return greet; 
+// }
+// readline.question("Enter name: ", name =>{
+//     console.log(greet(name));
+// })
+
+// Ex 10
+
+function square(number){
+    return number*number
+}
+readline.question("Enter number: ", number=>{
+    console.log(square(number));
+})
